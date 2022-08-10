@@ -1,4 +1,11 @@
-# Hostel-Management-System
+/*
+	
+	Title			: Hotel Management System
+	Language		: C++
+	Author			: Daljeet Singh Chhabra
+	Date Created	: 16-02-2016
+	Last Modified	: 01-10-2018
+*/
 
 #include<fstream.h>
 #include<iostream.h>
@@ -74,9 +81,9 @@ void hotel::main_menu() {
 	while(choice!=5) {
 		clrscr();
 		head();
-		cout<<"\n\t\t\t\t*****";
+		cout<<"\n\t\t\t\t*************";
 		cout<<"\n\t\t\t\t* MAIN MENU *";
-		cout<<"\n\t\t\t\t*****";
+		cout<<"\n\t\t\t\t*************";
 		cout<<"\n\n\n\t\t\t1.Book A Room";
 		cout<<"\n\t\t\t2.Customer Record";
 		cout<<"\n\t\t\t3.Rooms Allotted";
@@ -173,7 +180,7 @@ void hotel::rooms() {
 		cout<<"\n Room no: "<<room_no<<"\n Name: "<<name;
 		cout<<"\n Address: "<<address<<"\n Phone: "<<phone;
 		cout<<"\n Days: "<<days<<"\n Total: "<<fare;
-		cout<<"\n************";
+		cout<<"\n**********************************";
 	}
 	cout<<"\n\n\n\t\t\tPress any key to continue.....!!";
 	getch();
@@ -302,7 +309,7 @@ int main() {
 	cout<<"\n\n\t";
 	time();
 	cout<<"\t";
-	if(strcmp(id,"admin")==0&&strcmp(pass,"**")==0)
+	if(strcmp(id,"admin")==0&&strcmp(pass,"******")==0)
 		cout<<"\n\n\t\t\t  !!!Login Successfull!!!";
 	else {
 		cout<<"\n\n\t\t\t!!!INVALID CREDENTIALS!!!";
@@ -314,4 +321,4 @@ int main() {
 	getch();
 	
 	return 0;
-}
+} 
